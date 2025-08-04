@@ -91,7 +91,7 @@ export default function VotingPage() {
 
     try {
       const res = await axios.post<RankingResult[]>(
-        "http://127.0.0.1:3000/rankings/bradley-terry",
+        "https://pairwise-eval-backend.liara.run/rankings/bradley-terry/",
         rankingRequest
       );
       setRankings(res.data);

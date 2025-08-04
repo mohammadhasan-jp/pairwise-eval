@@ -1,6 +1,6 @@
 module github.com/mohammadhasan-jp/pairwise-eval/backend
 
-go 1.24.5
+go 1.23
 
 require (
 	github.com/gofiber/fiber/v2 v2.50.0 // مثلا آخرین نسخه
