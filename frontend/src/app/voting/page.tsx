@@ -119,8 +119,8 @@ export default function VotingPage() {
     }
 
     return (
-      <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded shadow text-center">
-        <h2 className="text-xl font-bold mb-6">رتبه‌بندی کارکنان</h2>
+      <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded shadow text-center text-black">
+        <h2 className="text-xl font-bold mb-6 text-black">رتبه‌بندی کارکنان</h2>
         <ul>
           {rankings
             .slice()
@@ -160,7 +160,7 @@ export default function VotingPage() {
         >
           {emp1?.name}
         </button>
-        <span className="text-xl font-bold self-center">یا</span>
+        <span className="text-xl font-bold self-center text-black">یا</span>
         <button
           onClick={() => handleVote(emp2, emp1)}
           className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700"

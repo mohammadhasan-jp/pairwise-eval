@@ -28,14 +28,14 @@ export default function AddEmployees() {
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded shadow">
-      <h1 className="text-2xl font-bold mb-6 text-center">اضافه کردن کارمندها</h1>
+      <h1 className="text-2xl font-bold mb-6 text-center text-black">اضافه کردن کارمندها</h1>
       <div className="flex gap-2 mb-4">
         <input
           type="text"
           placeholder="نام کارمند"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="border p-2 rounded flex-grow focus:outline-blue-500"
+          className="border p-2 rounded border-black flex-grow focus:outline-blue-500 text-black"
           onKeyDown={(e) => {
             if (e.key === "Enter") addEmployee();
           }}
@@ -52,13 +52,13 @@ export default function AddEmployees() {
         <p className="text-gray-500 mb-4 text-center">کارمندی اضافه نشده</p>
       )}
 
-      <ul className="mb-6 max-h-48 overflow-auto border rounded p-2">
+      <ul className="mb-6 max-h-48 overflow-auto border rounded p-2 border-black">
         {employees.map((emp, i) => (
           <li
             key={i}
-            className="border-b py-1 last:border-b-0 flex justify-between items-center"
+            className="border-b py-1 last:border-b-0 flex justify-between items-center "
           >
-            <span>{emp}</span>
+            <span className="text-black">{emp}</span>
             <button
               onClick={() => removeEmployee(i)}
               className="text-red-500 hover:text-red-700 font-bold"
